@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  webserverdio:
+    build: .
+    command: npm run dev
+    ports:
+     - "1548:1548"
+    volumes:
+      - .:/home/node/webserver
